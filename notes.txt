@@ -26,3 +26,23 @@ Expressions
 ===========
 
 {{ said expression }}
+
+Filters
+=======
+
+Three main things
+
+-- Modifying output
+-- Formatting
+-- Sorting Datasets!!!
+-- filtering databasets !!!
+
+strings -- uppercase and lowercase
+
+numbers -- number and currency
+
+orderBy
+
+limitTo
+
+filter

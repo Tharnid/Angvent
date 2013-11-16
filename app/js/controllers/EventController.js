@@ -3,6 +3,9 @@
 angvent.controller('EventController', 
 	function EventController($scope) {
 		
+		// sort order for sessions
+		$scope.sortorder = 'name';
+
 		$scope.snippet = '<span style="color:red">Hi there!!!</span>';
 
 		// boolean value or ng hide/show

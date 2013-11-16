@@ -25,7 +25,10 @@
 					<!-- Using NG-bind-template -->
 					<!-- Adding ngStyle -->
 					<!-- using ngClass -->
-					<h2 ng-class="myclass" ng-bind-template="{{event.name}} {{event.date}}"></h2>
+					<!-- <h2 ng-bind-template="{{event.name}} {{event.date}}"></h2> -->
+
+					<!-- Using built in Filters -->
+					<h2>{{ event.name | uppercase }}</h2>
 				</div>
 			</div>
 			
@@ -49,6 +52,7 @@
 				<div class="span3">
 					<div><strong>Date:</strong>{{ event.date }} </div>
 					<div><strong>Time:</strong>{{ event.time }} </div>
+					<div><strong>Price:</strong>{{ 34  | currency }} </div>
 				</div>
 			
 				<div class="span4">
@@ -64,13 +68,31 @@
 
 			<!-- Expressions -->
 			
-			{{ [1, 2, 3] [2] }}
+			<!-- {{ [1, 2, 3] [2] }} -->
+				
+				<!-- Number filters -->
+				<!-- <div>{{ 3.145897 | number:2 }}</div> -->
 
+				<!-- JSON -->
+				<!-- <div>{{ {a:3, b:'hi', c:{aa:35} } | json }}</div> -->
+				
 				<hr />
 
 				<h3>Sessions</h3>
+				OrderBy:
+				<select ng-model="sortorder" class="input-small">
+					<option selected value="name">Name</option>
+					<option value="-upVoteCount">Votes</option>
+				</select>
+				Show:
+				<select ng-model="query.level" class="input-medium">
+					<option selected="">All</option>
+					<option selected="beginning">Beginning</option>
+					<option selected="intermediate">Intermediate</option>
+					<option selected="advanced">Advanced</option>
+				</select>
 				<ul class="thumbnails">
-					<li ng-repeat="session in event.sessions">
+					<li ng-repeat="session in event.sessions | orderBy:sortorder | filter:query"> <!-- limitTo:2 --> |
 
 						<div class="row session">
 							<div class="span0 well votingWidget">
