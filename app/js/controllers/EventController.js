@@ -2,6 +2,18 @@
 
 angvent.controller('EventController', 
 	function EventController($scope) {
+		
+		$scope.snippet = '<span style="color:red">Hi there!!!</span>';
+
+		// boolean value or ng hide/show
+		$scope.boolValue = true;
+
+		// ngStyle stuff
+		$scope.mystyle = {color: 'red'};
+
+		// ngClass directive
+		$scope.myclass = "blue";
+
 		$scope.event = { 
 			name: 'Angular Bootcamp',
 			date: '1/1/2014',

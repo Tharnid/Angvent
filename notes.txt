@@ -1,0 +1,20 @@
+NG-Bind
+
+ngHide
+
+ngShow
+
+-- only manipulate DOM in directives and never manipulate it in the controller!!!
+
+ngCloak
+
+-- allows you to hide portions or all
+
+ngStyle
+
+Companions
+
+-- ngClass
+-- ngClassEven
+-- ngClassOdd
+
