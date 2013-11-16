@@ -18,24 +18,37 @@ angvent.controller('EventController',
 					creatorName: 'Han Solo',
 					duration: '1 hr',
 					level: 'Beginning',
-					abstract: 'Dragée jelly-o gummies gummi bears sesame snaps gummies.'
+					abstract: 'Dragée jelly-o gummies gummi bears sesame snaps gummies.',
+					upVoteCount: 0
 				},
 				{
 					name: 'Scope and Stuff',
 					creatorName: 'Wedge Antilles',
 					duration: '1 hr',
 					level: 'Intermediate',
-					abstract: 'Chocolate cake dessert cookie applicake oat cake dessert jelly beans.'
+					abstract: 'Chocolate cake dessert cookie applicake oat cake dessert jelly beans.',
+					upVoteCount: 0
 				},
 				{
 					name: 'Data Binding',
 					creatorName: 'Corran Horn',
 					duration: '1 hr',
 					level: 'Advanced',
-					abstract: 'Pie applicake fruitcake biscuit apple pie sesame snaps oat cake. '
+					abstract: 'Pie applicake fruitcake biscuit apple pie sesame snaps oat cake.',
+					upVoteCount: 0
 				}
 			]
 		}
+
+		// up votes
+		$scope.upVoteSession = function(session) {
+			session.upVoteCount++;
+		};
+
+		// down vote 
+		$scope.downVoteSession = function(session) {
+			session.downVoteCount--;
+		};
 	}
 
 );
