@@ -14,6 +14,9 @@ angvent.controller('EventController',
 		// ngClass directive
 		$scope.myclass = "blue";
 
+		// Disabling a button
+		$scope.buttonDisabled = true;
+
 		$scope.event = { 
 			name: 'Angular Bootcamp',
 			date: '1/1/2014',

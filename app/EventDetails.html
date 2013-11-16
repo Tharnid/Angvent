@@ -28,6 +28,9 @@
 					<h2 ng-class="myclass" ng-bind-template="{{event.name}} {{event.date}}"></h2>
 				</div>
 			</div>
+			
+			<button class="btn"ng-disabled="buttonDisabled">Disabled</button>
+
 			<!-- NG bing html -->
 <!-- 			<div ng-bind-html="snippet">
 				Some Title
@@ -56,6 +59,8 @@
 					</address>
 				</div>
 			</div>
+			<!-- ngNonBindable -->
+			<div ng-non-bindable>{{1 + 2}}</div>
 				<hr />
 
 				<h3>Sessions</h3>
