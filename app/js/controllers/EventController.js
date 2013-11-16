@@ -11,7 +11,30 @@ angvent.controller('EventController',
 				city: 'Odon',
 				state: 'IN'
 			},
-			imageUrl: '/img/AngularJS-Shield-small.png'
+			imageUrl: '/img/AngularJS-Shield-small.png',
+			sessions: [
+				{
+					name: 'Intro. to Directives',
+					creatorName: 'Han Solo',
+					duration: '1 hr',
+					level: 'Beginning',
+					abstract: 'Dragée jelly-o gummies gummi bears sesame snaps gummies.'
+				},
+				{
+					name: 'Scope and Stuff',
+					creatorName: 'Wedge Antilles',
+					duration: '1 hr',
+					level: 'Intermediate',
+					abstract: 'Chocolate cake dessert cookie applicake oat cake dessert jelly beans.'
+				},
+				{
+					name: 'Data Binding',
+					creatorName: 'Corran Horn',
+					duration: '1 hr',
+					level: 'Advanced',
+					abstract: 'Pie applicake fruitcake biscuit apple pie sesame snaps oat cake. '
+				}
+			]
 		}
 	}
 
