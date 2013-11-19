@@ -1,3 +1,3 @@
 'use strict';
 
-var angvent = angular.module('Angvent', ['ngSanitize']);
+var angvent = angular.module('Angvent', []);

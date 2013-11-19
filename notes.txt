@@ -47,3 +47,13 @@ limitTo
 
 filter
 
+Two Way Binding
+
+-- ngModel works with:
+
+-- -- input
+-- -- select
+-- -- textarea
+
+ie <input type="text" ng-model="object.property" />
+
