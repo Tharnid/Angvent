@@ -4,12 +4,19 @@ angvent.controller('EventController',
 	function EventController($scope, eventData) {
 		
 		// sort order for sessions
-		$scope.sortorder = 'name';
+		 $scope.sortorder = 'name';
+
+		 $scope.event = eventData.getEvent();
+
+		 $scope.event.then(
+		 		function(event) {console.log(event); },
+		 		function(response) {console.log(response);}
+		 	);
 
 		// $scope.snippet = '<span style="color:red">Hi there!!!</span>';
 
 		// boolean value or ng hide/show
-		$scope.boolValue = true;
+		// $scope.boolValue = true;
 
 		// ngStyle stuff
 		// $scope.mystyle = {color: 'red'};
@@ -20,7 +27,11 @@ angvent.controller('EventController',
 		// Disabling a button
 		// $scope.buttonDisabled = true;
 
-		$scope.event = eventData.event;
+		// eventData.getEvent(function(event) {
+		// 	$scope.event = event;
+		// });
+
+
 
 		// up votes
 		$scope.upVoteSession = function(session) {

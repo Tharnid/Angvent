@@ -57,3 +57,9 @@ Two Way Binding
 
 ie <input type="text" ng-model="object.property" />
 
+Services
+========
+
+$http
+$resource
+$q
