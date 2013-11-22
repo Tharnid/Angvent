@@ -31,6 +31,54 @@
                     "level": "Intermediate",
                     "abstract": "Controllers are the beginning of everything Angular does.  Learn how to craft controllers that will win the respect of your friends and neighbors.",
                     "upVoteCount": 0
+                },
+                                {
+                    "name": "Directives Masterclass",
+                    "creatorName": "Bob Smith",
+                    "duration": 1,
+                    "level": "Advanced",
+                    "abstract": "In this session you will learn the ins and outs of directives!",
+                    "upVoteCount": 0
+                },
+                {
+                    "name": "Resources for fun and profit",
+                    "creatorName": "Jorus C'baoth",
+                    "duration": 3,
+                    "level": "Beginning",
+                    "abstract": "Insane in the membrane",
+                    "upVoteCount": 0
+                },
+                {
+                    "name": "Understanding $httpBackend",
+                    "creatorName": "Gilaed Pellaeon",
+                    "duration": 2,
+                    "level": "Intermediate",
+                    "abstract": "Controllers are the beginning of everything Angular does.  Learn how to craft controllers that will win the respect of your friends and neighbors.",
+                    "upVoteCount": 0
+                },
+                                {
+                    "name": "Services Masterclass",
+                    "creatorName": "Nom Anor",
+                    "duration": 1,
+                    "level": "Advanced",
+                    "abstract": "In this session you will learn the ins and outs of services!",
+                    "upVoteCount": 0
+                },
+                {
+                    "name": "Angular Animation",
+                    "creatorName": "Han Solo",
+                    "duration": 3,
+                    "level": "Beginning",
+                    "abstract": "This session will take a closer look at animation.  Learn what they do, how they do it, and how to get them to do it for you.",
+                    "upVoteCount": 0
+                },
+                {
+                    "name": "Angular and Breeze",
+                    "creatorName": "Corran Horn",
+                    "duration": 2,
+                    "level": "Intermediate",
+                    "abstract": "News at 11",
+                    "upVoteCount": 0
                 }
             ]
         }

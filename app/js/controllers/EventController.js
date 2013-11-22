@@ -1,7 +1,7 @@
 'use-strict';
 
 angvent.controller('EventController', 
-	function EventController($scope, eventData) {
+	function EventController($scope, eventData, $anchorScroll) {
 		
 		// sort order for sessions
 		 $scope.sortorder = 'name';
@@ -42,6 +42,10 @@ angvent.controller('EventController',
 		$scope.downVoteSession = function(session) {
 			session.downVoteCount--;
 		};
+
+		$scope.scrollToSession = function () {
+			$anchorScroll();
+		}
 	}
 
 );
