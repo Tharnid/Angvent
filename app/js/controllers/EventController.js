@@ -6,7 +6,7 @@ angvent.controller('EventController',
 		// sort order for sessions
 		 $scope.sortorder = 'name';
 
-		 $scope.event = eventData.getEvent();
+		 $scope.event = eventData.getEvent($routeParams.eventId);
 
 		 $scope.event.then(
 		 		function(event) {console.log(event); },
@@ -43,9 +43,9 @@ angvent.controller('EventController',
 			session.downVoteCount--;
 		};
 
-		$scope.scrollToSession = function () {
-			$anchorScroll();
-		}
+		// $scope.scrollToSession = function () {
+		// 	$anchorScroll();
+		// }
 	}
 
 );

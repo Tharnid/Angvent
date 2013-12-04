@@ -7,11 +7,20 @@ var angvent = angular.module('Angvent', ['ngResource'])
                 templateUrl:'templates/NewEvent.html',
                 controller: 'EditEventController'
             });
-        // $routeProvider.when('/events',
-        //     {
-        //         templateUrl: 'templates/EventList.html',
-        //         controller: 'EventListController'
-        //     });
+
+        $routeProvider.when('/events',
+            {
+                templateUrl: 'templates/EventList.html',
+                controller: 'EventListController'
+            });
+
+        $routeProvider.when('/event/:eventId',
+            {
+                templateUrl: 'templates/EventDetails.html',
+                controller: 'EventController'
+            });
+
+
         // $routeProvider.when('/event/:eventId',
         //     {
         //         templateUrl: '/templates/EventDetails.html',
@@ -24,7 +33,7 @@ var angvent = angular.module('Angvent', ['ngResource'])
         //                 return deferred.promise;
         //             }
         //         }
-        //     });
-        // $routeProvider.otherwise({redirectTo: '/events'});
+        //    });
+        $routeProvider.otherwise({redirectTo: '/events'});
         // $locationProvider.html5Mode(true);
     });

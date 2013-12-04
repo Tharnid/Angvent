@@ -1,16 +1,17 @@
-angvent.factory('eventData', function($resource, $q) { // $http, $q
+angvent.factory('eventData', function ($resource, $q, $timeout) {
     var resource = $resource('/data/event/:id', {id: '@id'});
     return {
-        getEvent: function () {
+        getEvent: function (eventId) {
             var deferred = $q.defer();
-            resource.get({id: 1},
-                function (event) {
-                    deferred.resolve(event);
-                },
-                function (response) {
-                    deferred.reject(response);
-                });
-
+            $timeout(function() {
+                resource.get({id: eventId},
+                    function (event) {
+                        deferred.resolve(event);
+                    },
+                    function (response) {
+                        deferred.reject(response);
+                    });
+            }, 3000);
             return deferred.promise;
         },
         save: function(event) {
@@ -21,7 +22,9 @@ angvent.factory('eventData', function($resource, $q) { // $http, $q
                 function(response) { deferred.reject(response);}
             );
             return deferred.promise;
+        },
+        getAllEvents: function() {
+            return resource.query();
         }
-	};
-
+    };
 });
