@@ -12,19 +12,12 @@ var angvent = angular.module('Angvent', ['ngResource'])
                 templateUrl: 'templates/EventList.html',
                 controller: 'EventListController'
             });
-        // $routeProvider.when('/event/:eventId',
-        //     {
-        //         templateUrl: 'templates/EventDetails.html',
-        //         controller: 'EventController',
-        //         // resolve: {
-        //         //     event: function($q, $route, eventData) {
-        //         //         var deferred = $q.defer();
-        //         //         eventData.getEvent($route.current.pathParams.eventId)
-        //         //             .then(function(event) { deferred.resolve(event); });
-        //         //         return deferred.promise;
-        //         //     }
-        //         // }
-        //     });
+
+        $routeProvider.when('/event/:eventId',
+            {
+                templateUrl: 'templates/EventDetails.html',
+                controller: 'EventController'
+            });        
 
         // $routeProvider.otherwise({redirectTo: '/events'});
         // $locationProvider.html5Mode(true);
