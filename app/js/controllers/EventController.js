@@ -1,7 +1,7 @@
 'use-strict';
 
 angvent.controller('EventController', 
-	function EventController($scope, eventData, $anchorScroll) {
+	function EventController($scope, eventData, $routeParams) {
 		
 		// sort order for sessions
 		 $scope.sortorder = 'name';
