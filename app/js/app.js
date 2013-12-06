@@ -19,6 +19,6 @@ var angvent = angular.module('Angvent', ['ngResource'])
                 controller: 'EventController'
             });        
 
-        // $routeProvider.otherwise({redirectTo: '/events'});
+        $routeProvider.otherwise({redirectTo: '/events'});
         // $locationProvider.html5Mode(true);
     });
