@@ -1,17 +1,26 @@
 'use-strict';
 
 angvent.controller('EventController', 
-	function EventController($scope, eventData, $routeParams) {
+	function EventController($scope, eventData, $routeParams, $route) {
 		
 		// sort order for sessions
 		 $scope.sortorder = 'name';
 
 		 $scope.event = eventData.getEvent($routeParams.eventId);
 
-		 $scope.event.then(
-		 		function(event) {console.log(event); },
-		 		function(response) {console.log(response);}
-		 	);
+		 // $scope.event.then(
+		 // 		function(event) {console.log(event); },
+		 // 		function(response) {console.log(response);}
+		 // 	);
+
+		 // outputting foo property in the console
+		 // console.log($route.current.foo);
+
+		 $scope.reload = function() {
+		 	$route.reload();
+		 };
+		 	
+		 
 
 		// $scope.snippet = '<span style="color:red">Hi there!!!</span>';
 

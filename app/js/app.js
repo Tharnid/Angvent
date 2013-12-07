@@ -15,6 +15,8 @@ var angvent = angular.module('Angvent', ['ngResource'])
 
         $routeProvider.when('/event/:eventId',
             {
+                // using route service
+                // foo:'bar',
                 templateUrl: 'templates/EventDetails.html',
                 controller: 'EventController'
             });        
