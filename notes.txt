@@ -63,3 +63,16 @@ Services
 $http
 $resource
 $q
+
+End of Routing Exercises to try:
+
+1.  convert editprofile.html to the new template in the SPA, add a route, and a link.
+	(will have to try this)
+2.  create a route that requires no template or controller...like the hello world thing jim 
+	did in the videos (hmmmm)
+
+3.  Add a resolve property to the /events route...ummm this didn't work for me...so that it does
+	not load until the events have been loaded from disk.
+
+	I will do these, but I need to plug along in this course...maybe I comeback and do them
+	later

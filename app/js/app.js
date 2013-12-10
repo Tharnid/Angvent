@@ -1,7 +1,7 @@
 'use strict';
 
 var angvent = angular.module('Angvent', ['ngResource'])
-    .config(function ($routeProvider, $locationProvider) { // , $locationProvider
+    .config(function ($routeProvider) { // , $locationProvider
         $routeProvider.when('/newEvent',
             {
                 templateUrl:'templates/NewEvent.html',
@@ -22,5 +22,5 @@ var angvent = angular.module('Angvent', ['ngResource'])
             });        
 
         $routeProvider.otherwise({redirectTo: '/events'});
-        $locationProvider.html5Mode(true);
+        // $locationProvider.html5Mode(true);
     });
