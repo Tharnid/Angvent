@@ -1,61 +1,65 @@
 'use-strict';
 
 angvent.controller('EventController', 
-	function EventController($scope, eventData, $routeParams, $route) {
-		
-		// sort order for sessions
-		 $scope.sortorder = 'name';
+    function EventController($scope, eventData, $routeParams, $route) {
+        // eventData, $routeParams, 
 
-		 $scope.event = eventData.getEvent($routeParams.eventId);
+        // sort order for sessions
+         $scope.sortorder = 'name';
 
-		 // $scope.event.then(
-		 // 		function(event) {console.log(event); },
-		 // 		function(response) {console.log(response);}
-		 // 	);
+         $scope.event = eventData.getEvent($routeParams.eventId);
+         // $scope.event = $route.current.locals.event;
 
-		 // outputting foo property in the console
-		 // console.log($route.current.foo);
+         // $scope.event.then(
+         //         function(event) {console.log(event); },
+         //         function(response) {console.log(response);}
+         //     );
 
-		 $scope.reload = function() {
-		 	$route.reload();
-		 };
-		 	
-		 
+         // outputting foo property in the console
+         // console.log($route.current.foo);
 
-		// $scope.snippet = '<span style="color:red">Hi there!!!</span>';
+         $scope.reload = function() {
+            $route.reload();
+         };
+            
+         
 
-		// boolean value or ng hide/show
-		// $scope.boolValue = true;
+        // $scope.snippet = '<span style="color:red">Hi there!!!</span>';
 
-		// ngStyle stuff
-		// $scope.mystyle = {color: 'red'};
+        // boolean value or ng hide/show
+        // $scope.boolValue = true;
 
-		// ngClass directive
-		// $scope.myclass = "blue";
+        // ngStyle stuff
+        // $scope.mystyle = {color: 'red'};
 
-		// Disabling a button
-		// $scope.buttonDisabled = true;
+        // ngClass directive
+        // $scope.myclass = "blue";
 
-		// eventData.getEvent(function(event) {
-		// 	$scope.event = event;
-		// });
+        // Disabling a button
+        // $scope.buttonDisabled = true;
+
+        // eventData.getEvent(function(event) {
+        //  $scope.event = event;
+        // });
 
 
 
-		// up votes
-		$scope.upVoteSession = function(session) {
-			session.upVoteCount++;
-		};
+        // up votes
+        $scope.upVoteSession = function(session) {
+            session.upVoteCount++;
+        };
 
-		// down vote 
-		$scope.downVoteSession = function(session) {
-			session.downVoteCount--;
-		};
+        // down vote 
+        $scope.downVoteSession = function(session) {
+            session.downVoteCount--;
+        };
 
-		// $scope.scrollToSession = function () {
-		// 	$anchorScroll();
-		// }
-	}
+        // $scope.scrollToSession = function () {
+        //  $anchorScroll();
+        // }
+    }
 
 );
+
+
 
