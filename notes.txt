@@ -76,3 +76,9 @@ End of Routing Exercises to try:
 
 	I will do these, but I need to plug along in this course...maybe I comeback and do them
 	later
+
+==============================
+Require with nested directives
+==============================
+
+Transculsion...taking html and embedding it inside a directive
